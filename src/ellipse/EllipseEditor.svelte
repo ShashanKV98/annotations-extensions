@@ -95,23 +95,23 @@
     on:pointerdown={grab(Handle.SHAPE)}
     cx={geom.cx} cy={geom.cy} rx={geom.rx} ry={geom.ry} />
 
-  <circle 
+  <rect 
     class="a9s-corner-handle a9s-corner-top"
     on:pointerdown={grab(Handle.TOP)}
-    cx={geom.cx - handleSize / 2} cy={geom.cy - handleSize / 2 - geom.ry} r={handleSize/2} />
+    x={geom.cx - handleSize / 2} y={geom.cy - handleSize / 2 - geom.ry} height={handleSize} width={handleSize} />
 
-  <circle 
+  <rect 
     class="a9s-corner-handle a9s-corner-handle-right"
     on:pointerdown={grab(Handle.RIGHT)}
-    cx={geom.cx + geom.rx - handleSize / 2} cy={geom.cy - handleSize / 2} r={handleSize/2} />
+    x={geom.cx + geom.rx - handleSize / 2} y={geom.cy - handleSize / 2} height={handleSize} width={handleSize} />
   
-  <circle 
+  <rect 
     class="a9s-corner-handle a9s-corner-handle-bottom"
     on:pointerdown={grab(Handle.BOTTOM)}
-    cx={geom.cx - handleSize / 2} cy={geom.cy + geom.ry - handleSize / 2} r={handleSize/2} />
+    x={geom.cx - handleSize / 2} y={geom.cy + geom.ry - handleSize / 2} height={handleSize} width={handleSize} />
     
-  <circle 
+  <rect 
     class="a9s-corner-handle a9s-corner-handle-left"
     on:pointerdown={grab(Handle.LEFT)}
-    cx={geom.cx - geom.rx - handleSize / 2} cy={geom.cy - handleSize / 2} r={handleSize/2} />
+    x={geom.cx - geom.rx - handleSize / 2} y={geom.cy - handleSize / 2} height={handleSize} width={handleSize} />
 </Editor>
