@@ -1,6 +1,6 @@
 import { ShapeType, type ImageAnnotator } from '@annotorious/annotorious';
 import { EllipseEditor, RubberbandEllipse } from './ellipse';
-import { FreehandEditor, RubberbandFreehand } from './ellipse';
+// import { FreehandEditor, RubberbandFreehand } from './ellipse';
 
 export const mountExtension = (
   anno: ImageAnnotator
@@ -8,7 +8,7 @@ export const mountExtension = (
 
   anno.registerDrawingTool('ellipse', RubberbandEllipse);
   anno.registerShapeEditor(ShapeType.ELLIPSE, EllipseEditor);
-  anno.registerDrawingTool('freehand', RubberbandFreehand);
-  anno.registerShapeEditor('FREEHAND', FreehandEditor);
+  // anno.registerDrawingTool('freehand', RubberbandFreehand);
+  // anno.registerShapeEditor('FREEHAND', FreehandEditor);
 
 }
