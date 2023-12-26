@@ -46,6 +46,5 @@
   },
   "dependencies": {
     "@annotorious/core": "^3.0.0-rc.16",
-    // "@annotorious/annotorious": "git+https://github.com/ShashanKV98/annotorious-subdir.git#upstream-annotorious"
   }
 }
